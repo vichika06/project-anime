@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto-Changing Image</title>
+  <style>
+    .main-content {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      width: 100%;
+      height: 70vh;
+      overflow-x: auto;
+      scrollbar-width: none; /* For Firefox */
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    }
+
+    .main-content::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Opera */
+    }
+
+    abbr {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <div>
+      <img src="/public/image/haikyu.png" alt="Image 1" class="auto-change-image">
+      <p><abbr title="Uzumaki">Uzumaki</abbr></p>
+    </div>
+    <!-- Add more image and text elements as needed -->
+  </div>
+
+  <script>
+    const imageElements = document.querySelectorAll('.auto-change-image');
+    const imageUrls = ['/public/image/haikyu.png', '/public/image/haikyu.pn', '/public/image/haikyu.png', '/public/image/haikyu.png', '/public/image/haikyu.ng'];
+    let currentIndex = 0;
+
+    function changeImages() {
+      imageElements.forEach((image) => {
+        image.src = imageUrls[currentIndex];
+      });
+      currentIndex = (currentIndex + 1) % imageUrls.length;
+    }
+
+    setInterval(changeImages, 3000); // Change images every 3 seconds
+  </script>
+</body>
+</html>
