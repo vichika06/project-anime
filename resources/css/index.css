@@ -5,8 +5,21 @@
     margin: 0;
     padding: 0;
     
-}
 
+}
+/* DETAIL */
+.background-detail{
+    position:absolute ;
+    width: 100%;
+    height: 100vh ;
+    z-index: -10;
+}
+.background-detail img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+/* main */
 .background2{
     position:absolute ;
      width: 100%;
@@ -22,10 +35,16 @@
 
  /* nav */
 .nav-bar{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    /* padding: 20px; */
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    background-color: coral;
+    transition: 0.5s;
     /* position: fixed; */
    
 }
@@ -58,13 +77,14 @@
 
 
 .content-header{
-    margin-top:3.5rem;
+    
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:repeat(2,50%);
     align-items: center;
+    /* background-color: antiquewhite; */
 }
 .img-nav{
-     /* margin-top: 14rem; */
+     margin-top: 12rem;
     /* background: url(../../public/image/haikyu.png) ; */
     justify-content: center;
     width: 45rem;
@@ -72,9 +92,9 @@
     border-radius: 12px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     /* background-color: blue; */
-    padding: 5px;
+    /* padding: 5px; */
     backdrop-filter: blur(1px);
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     
 }
 .img-nav img{
@@ -118,7 +138,7 @@
     /* grid-template-columns: 10%; */
      align-items: center;
      width: 100%;
-     height: 55vh;
+     height: 57vh;
     
      /* background: #000; */
      overflow-x: scroll;
@@ -187,20 +207,49 @@
     align-items: center;
     width: 100%;
     /* background: #000; */
+    /* flex-direction: ; */
 }
 
 /* footer */
 .footer{
+    /* position: fixed; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30rem;
+   
     background: orange;
     width: 100%;
-    height: 5rem;
+    height: 80px;
+    transition: 0.5s;
 }
 
 .footer ul li{
     color: aliceblue;
     display: inline-block;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<detail>>>>>>>>>>>>>>>>>>>> */
+
+.contain-detail{
+    position: relative;
+    /* z-index: 10; */
+    height: 100vh;
+    display: flex;
+    /* grid-template-columns: repeat(1 , 90% , 10%); */
+    /* background: #000; */
+}
+.watch-side {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:  #000; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.watch-side video{
+    width: 80%;
+}
+.episode{
+    width: 20%;
+    background-color: blue;
 }
