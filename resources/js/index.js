@@ -52,3 +52,6 @@ window.addEventListener('scroll', function () {
 
     lastScrollFooter = scrollTop; 
 });
+
+
+// dark theme
