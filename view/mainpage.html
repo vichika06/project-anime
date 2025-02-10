@@ -11,9 +11,74 @@
 
     <link href="../resources/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../resources/css/responsive.css">
-    <title>Document</title>
+    <link rel="icon" href="../public/image/Kailogo2.png">
+    
+    <title>Kai ANIME</title>
 </head>
 <body>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Longin</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group p-2">
+                        <input type="text" class="form-control item" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group p-2">
+                        <input type="password" class="form-control item" id="password" placeholder="Password">
+                    </div>
+                   
+                </form>  
+              
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-success" >Login</button>
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Register</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group p-2">
+                        <input type="text" class="form-control item" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group p-2">
+                        <input type="password" class="form-control item" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group p-2">
+                        <input type="text" class="form-control item" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group p-2">
+                        <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group p-2">
+                        <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
+                    </div>
+                    
+                </form>  
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+    
     <div class="background2 ">
         <img src="../public/image/haikyu1.jpg" alt="">
     </div>
@@ -21,7 +86,8 @@
     <header class="bag">
         <nav class="nav-bar" id="scroll-hidden" >
             <div class="logo">
-                <img src="https://placehold.co/70x70" alt="">
+                <a href="../view/mainpage.html"><img src="../public/image/Kailogo2.png" width="90px" height="70px" alt=""></a>
+                
             </div>
             <ul class="link-list">
                 <li><a href="#">About</a></li>
@@ -30,10 +96,9 @@
                 <li><a href="#">Community</a></li>
             </ul>
             <div class="login">
-                <a href=""><input class="btn" id="btn" type="button" value="Sing In"></a>
-                
+                <button class="btn" id="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sing in</button> 
             </div>
-
+    
         </nav>
         <div class="content-header">
             <div class="img-nav" >
@@ -50,100 +115,110 @@
         
     </header>
     <div class="tittle ">
-        <h1>HELLO</h1>
+        <h1>TOP ANIME</h1>
     </div>
     <!-- <div class="clip-path"></div> -->
     <main class="main-content m2" >
        
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/thumbnail1-haikyu.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img  src="../public/image/demon-slayer.jpg" alt="">
 
             </div>
             <div class="text">
-                <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
-
+                <img src="../public/image/one-piece.jpg" alt="">
+                
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/jujutsu-kaisen.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/tokyo-revengers.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/the apothecary diaries.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
 
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/castlevania.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/ThumbnailNaruto.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/hunterXhunter.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/sousouNofrieren.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
        
@@ -153,101 +228,112 @@
 
     </main>
 
+
     <div class="tittle">
-        <h1>HELLO</h1>
+        <h1>SUGGEST FOR YOU</h1>
     </div>
 
     <main class="main-content m2" >
        
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/kimiNoKaWa.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/attack on titan.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/fullmetal.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/clannad.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/castlevania.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/koeNoKatachi.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
 
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
-
-            </div>
-            <div class="text">
-                <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
-            </div>
-        </div>
-        <div class="main-img1">
-            <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/SaiTaMa.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/Sen to Chihiro no Kamikakushi.jpg" alt="">
 
             </div>
             <div class="text">
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
         <div class="main-img1">
             <div class="images">
-                <img src="../public/image/naruto.jpg" alt="">
+                <img src="../public/image/gintama.jpg" alt="">
+
+            </div>
+            <div class="text">
+                <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
+            </div>
+        </div>
+        <div class="main-img1">
+            <div class="images">
+                <img src="../public/image/002.jpg" alt="">
 
             </div>
             <div class="text" >
                 <h3><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nesciunt.</h3>
+                <div class="btn btnn"><a href="../view/dertail-card.html">WATCH</a></div>
             </div>
         </div>
     </main>
